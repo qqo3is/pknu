@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body bgcolor="#F2F2F2">
+        <img src="tvn.jpg" width="240" height="320">
+        <video src = "vd1.mp4" id = "vod" type = "video/mp4"></video><br>
+        <button onclick = "vodPlay()">재생</button>
+        <button onclick = "vodPause()">일시정지</button><br>
+        볼륨:<input id ="volumecontrol" type="range" max="1" step="any" onchange="updateVolume()"><br><br>
+
+        <script type = "text/javascript">
+            var vod = document.getElementById("vod");
+            function vodPlay()
+            {
+                vod.play();
+            }
+            function vodPause()
+            {
+                vod.pause();
+            }
+            function updateVolume()
+            {
+                vod.volume = volumecontrol.value;
+            }
+        </script>
+
+        <img src="tving.jpg" width="240" height="320">
+        <video src = "vd2.mp4" id = "vod" type = "video/mp4"></video><br>
+        <button onclick = "vodPlay()">재생</button>
+        <button onclick = "vodPause()">일시정지</button><br>
+        볼륨:<input id ="volumecontrol" type="range" max="1" step="any" onchange="updateVolume()"> <br><br>
+
+        <script type = "text/javascript">
+        var vod = document.getElementById("vod");
+        function vodPlay()
+        {
+            vod.play();
+        }
+        function vodPause()
+        {
+            vod.pause();
+        }
+        function updateVolume()
+        {
+            vod.volume = volumecontrol.value;
+        }
+        </script>
+        <img src="jtbc.jpg" width="240" height="320">
+        <video src = "vd3.mp4" id = "vod" type = "video/mp4"></video><br>
+        <button onclick = "vodPlay()">재생</button>
+        <button onclick = "vodPause()">일시정지</button><br>
+        볼륨:<input id ="volumecontrol" type="range" max="1" step="any" onchange="updateVolume()"> <p>
+
+        <script type = "text/javascript">
+            var vod = document.getElementById("vod");
+            function vodPlay()
+            {
+                vod.play();
+            }
+            function vodPause()
+            {
+                vod.pause();
+            }
+            function updateVolume()
+            {
+                vod.volume = volumecontrol.value;
+            }
+        </script>
+    </body>
+</html>
